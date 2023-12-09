@@ -20,7 +20,11 @@ function App() {
 
  function convert() {
 
-    setConvertedAmount(amount*currencyInfo[to])
+  let a = amount*currencyInfo[to]
+
+  a=a.toFixed(2)
+
+    setConvertedAmount(a)
 
   }
 
